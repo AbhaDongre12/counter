@@ -1,0 +1,5 @@
+body{background-color:yellow}
+#increment:hover{background-color:pink;color:blue}
+#decrement:hover{background-color:pink;color:blue}
+h1{text-align:center;color:green;font-style:italic}
+p{padding:30px;font-family:calibri}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Counter</title>
+<link rel="stylesheet" href="customise.css">
+</head>
+<body>
+<h1 class="heading">Counter App</h1>
+<p id="info">This app shows us a number counter. The number increases by 1 when you hover your mouse over the increment button and decreases by 1 when you hover the mouse over the decrement button. Try for yourself!</p><br><br>
+<div id="counter">0</div><br>
+<button id="increment" name="increment" onmouseover="incr()">Increment</button>
+<button id="decrement" name="decrement" onmouseover="decr()">Decrement</button>
+<script type="text/JavaScript">
+var count;
+var counterDisplay = document.getElementById('counter');
+count=0;
+function display()
+{
+counterDisplay.textContent=count;
+}
+function incr()
+{
+count ++;
+display();
+}
+function decr()
+{
+if(count>0)
+{
+count--;
+}
+display();
+}
+</script>
+</body>
+</html>
